@@ -1,0 +1,51 @@
+.c-nav{
+  width:15%;
+  margin-top: 0.5%;
+  float:left;
+  background-color: blue;
+
+}
+
+.c-nav a{
+  color:#4A4A83;
+}
+.c-btn{
+  background-color:#F8F9FA ;
+  color:#4A4A83;
+  border: none;
+  padding-left:5px;
+ 
+}
+.masthead {
+  height:35vh;
+  min-height: 50px;
+  background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.section{
+  float:right;
+  margin-right:2%;
+  margin-top:2%;
+  width:80%;
+  font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-style: normal;  
+  font-weight: 500;
+  font-size: larger;
+}
+.footer{
+  background-color:#F8F9FA ;
+  padding:5px;
+
+}
+.footer a{
+  text-decoration:none;
+  background-color:#F8F9FA ;
+  padding:0.5px;
+}
+.dropdown{
+z-index: 1000;
+}
