@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "hscweb-acfbb"
+  },
+  "targets": {
+    "hscweb-acfbb": {
+      "hosting": {
+        "HSCweb": [
+          "hscweb-acfbb"
+        ]
+      }
+    }
   }
 }

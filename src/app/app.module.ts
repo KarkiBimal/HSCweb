@@ -1,5 +1,5 @@
-
-import { environment } from '../environments/environment.prod';
+import { FireserviceService } from './fireservice.service';
+import { environment } from '../environments/environment';
 import { NgModule, Component } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {RouterModule} from '@angular/router';
@@ -14,8 +14,6 @@ import { RCLPComponent } from './rclp/rclp.component';
 import { ProtocolsComponent } from './protocols/protocols.component';
 import { JournalCitationComponent } from './journal-citation/journal-citation.component';
 import { NewsComponent } from './news/news.component';
-import {AngularFireModule} from 'angularfire2';
-import {AngularFireDatabaseModule} from 'angularfire2/database';
 import { CellreqsEftComponent } from './cellreqs-eft/cellreqs-eft.component';
 import { CellreqsLeukComponent } from './cellreqs-leuk/cellreqs-leuk.component';
 import { CellreqsNblComponent } from './cellreqs-nbl/cellreqs-nbl.component';
@@ -26,7 +24,14 @@ import { CellreqsAllComponent } from './cellreqs-all/cellreqs-all.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ClidComponent } from './clid/clid.component';
 import { BrainTableComponent } from './brain-table/brain-table.component';
-import {HttpClientModule} from '@angular/common/http'
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { AngularFireModule } from '@angular/fire';
+import {AngularFireDatabase} from 'angularfire2/database';
+
+
+
+
+
 
 
 @NgModule({
@@ -56,10 +61,9 @@ import {HttpClientModule} from '@angular/common/http'
   ],
   imports: [
     BrowserModule,
-    AngularFireModule.initializeApp(environment.firebase),
-    HttpClientModule,
-    
     AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule,
     RouterModule.forRoot([
      
         {path:'',component:HomeComponentComponent},
@@ -88,8 +92,15 @@ import {HttpClientModule} from '@angular/common/http'
 
 ],
 providers: [
+  AngularFireDatabase,
+  FireserviceService
+   
 ],
 bootstrap: [ AppComponent ]
  
 })
-export class AppModule { }
+export class AppModule { 
+  constructor(){
+    
+  }
+}
