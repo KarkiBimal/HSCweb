@@ -1,6 +1,7 @@
+import { async } from '@angular/core/testing';
 import { Injectable } from '@angular/core';
 import { AngularFireDatabase } from 'angularfire2/database';
-import { getEnabledCategories } from 'trace_events';
+import firebase from 'firebase';
 
 @Injectable({
   providedIn: 'root'
@@ -19,16 +20,29 @@ export class FireserviceService {
   private getCart(cartId:string){
      return this.db.object('/shopping-carts/'+ cartId);
   }
+  private node_v(val:any){
+        return val;
+  }
+
   private async getOrCreateCart(){
     let cartId=localStorage.getItem('cartId');
-    if(!cartId){
+    if (cartId) return cartId; 
+    else{
       
       let result= await this.create();
-      
-      localStorage.setItem('cartId',result.key);
-      return this.getCart(result.key);
+      let val=this.node_v(result.key);
+      localStorage.setItem('cartId',val);
+      return val;
     }
-    return this.getCart(cartId);
+    
+  }
+    
+  async addToCart(x:string, y:string){
+      let cartId=await this.getOrCreateCart();
+      var firebaseRef=firebase.database().ref("/shopping-carts/"+cartId).child(x).set(y);
+   
+      
   }
   
+
 }

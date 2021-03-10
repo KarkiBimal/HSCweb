@@ -27,6 +27,7 @@ import { BrainTableComponent } from './brain-table/brain-table.component';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFireModule } from '@angular/fire';
 import {AngularFireDatabase} from 'angularfire2/database';
+import { CartComponent } from './cart/cart.component';
 
 
 
@@ -55,6 +56,7 @@ import {AngularFireDatabase} from 'angularfire2/database';
     AboutusComponent,
     ClidComponent,
     BrainTableComponent,
+    CartComponent,
     
     
     
@@ -82,6 +84,7 @@ import {AngularFireDatabase} from 'angularfire2/database';
         {path:'aboutus', component:AboutusComponent},
         {path:'clid', component:ClidComponent},
         {path:'brain', component:BrainTableComponent},
+        {path:'cart', component:CartComponent},
 
     
     

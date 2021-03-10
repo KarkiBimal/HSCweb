@@ -14,12 +14,8 @@ export class BrainTableComponent  {
   
   constructor(private cartService: FireserviceService) { }
   
-  addToCart(val:any){
-    //let cart=this.cartService.getOrCreateCart('cartId');
-    //this.cartService.addToCart();
-    
-    
-    
+  addToCart1(x:string, y:string){
+    this.cartService.addToCart(x,y);
   }
 
 }

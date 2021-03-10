@@ -17,7 +17,7 @@
     <th scope="col">Diagnosis</th>
     <th colspan="3">pO2</th>
     <th scope="col"> Request </th>
-    </tr>
+    
     </thead>
     <tbody>
      <tr>
@@ -30,10 +30,52 @@
             <td>-</td>
             <td>-</td>
             <td>-</td>
-            <td><button type="button" class="btn btn-default btn-sm"  (click)="addToCart('Test')">
+            <td><button type="button" class="btn btn-default btn-sm"  (click)="addToCart1('Test','Testy')">
                 <span class="glyphicon glyphicon-shopping-cart" ></span> 
               </button></td>
-        </tr>
+   
+
+
+        <tr><td>CHLA-198</td><td>Dx</td><td>tumor</td><td>&nbsp;</td><td>Anaplastic Astrocytoma</td><td>-</td><td>-</td><td>&#10003;</td><td><button type="button" class="btn btn-default btn-sm"  (click)="addToCart1('CHLA-198','CHLA-198')">
+                <span class="glyphicon glyphicon-shopping-cart" ></span> 
+              </button></td></tr>
+          <tr><td><a href="../PDF_Files/Brain/CHLA-259.pdf">CHLA-259</a></td><td>Dx</td><td>posterior fossa</td><td>14</td><td>Anaplastic Medulloblastoma</td><td>-</td><td>-</td><td>&#10003;</td><td><button type="button" class="btn btn-default btn-sm"  (click)="addToCart1('CHLA-259','CHLA-259')">
+                <span class="glyphicon glyphicon-shopping-cart" ></span> 
+              </button></td></tr>
+          <tr><td>COG-G-407</td><td>Dx</td><td>tumor</td><td>&nbsp;</td><td>Anaplastic Oligodendroglioma</td><td>-</td><td>&#10003;</td><td>&#10003;</td><td><button type="button" class="btn btn-default btn-sm"  (click)="addToCart1('COG-G-407','COG-G-407')">
+                <span class="glyphicon glyphicon-shopping-cart" ></span> 
+              </button></td></tr>
+          <tr><td><a href="../PDF_Files/Brain/BT-12.pdf">BT-12</a></td><td>Dx</td><td>tumor</td><td>0.2</td><td>Atypical Teratoid Rhabdoid Tumor</td><td>-</td><td>-</td><td>&#10003;</td><td><button type="button" class="btn btn-default btn-sm"  (click)="addToCart1('BT-12','BT-12')">
+                <span class="glyphicon glyphicon-shopping-cart" ></span> 
+              </button></td></tr>
+          <tr><td>CHLA-135</td><td>Dx</td><td>tumor</td><td>&nbsp;</td><td>Atypical Teratoid Rhabdoid Tumor</td><td>-</td><td>-</td><td>-</td><td><button type="button" class="btn btn-default btn-sm"  (click)="addToCart1('CHLA-135','CHLA-135')">
+                <span class="glyphicon glyphicon-shopping-cart" ></span> 
+              </button></td></tr>
+          <tr><td>CHLA-266</td><td>Dx</td><td>posterior fossa</td><td>1.5</td><td>Atypical Teratoid Rhabdoid Tumor</td><td>-</td><td>-</td><td>-</td><td><button type="button" class="btn btn-default btn-sm"  (click)="addToCart1('CHLA-266','CHLA-266')">
+                <span class="glyphicon glyphicon-shopping-cart" ></span> 
+              </button></td></tr>
+          <tr><td>COG-AR-359</td><td>Dx</td><td>tumor</td><td>&nbsp;</td><td>Atypical Teratoid Rhabdoid Tumor</td><td>-</td><td>&#10003;</td><td>&#10003;</td><td><button type="button" class="btn btn-default btn-sm"  (click)="addToCart1('COG-AR-359','COG-AR-359')">
+                <span class="glyphicon glyphicon-shopping-cart" ></span> 
+              </button></td></tr>
+          <tr><td>COG-AR-397hnb</td><td>PD</td><td>cerebrospinal fluid</td><td>&nbsp;</td><td>Atypical Teratoid Rhabdoid Tumor</td><td>-</td><td>&#10003;</td><td>-</td><td><button type="button" class="btn btn-default btn-sm"  (click)="addToCart1('COG-AR-397hnb','COG-AR-397hnb')">
+                <span class="glyphicon glyphicon-shopping-cart" ></span> 
+              </button></td></tr>
+          <tr><td>CHLA-148</td><td>Dx</td><td>bone marrow</td><td>&nbsp;</td><td>DNET</td><td>-</td><td>-</td><td>&#10003;</td><td><button type="button" class="btn btn-default btn-sm"  (click)="addToCart1('CHLA-148','CHLA-148')">
+                <span class="glyphicon glyphicon-shopping-cart" ></span> 
+              </button></td></tr>
+          <tr><td>COG-B-277</td><td>PD</td><td>&nbsp;</td><td>&nbsp;</td><td>DNET</td><td>-</td><td>-</td><td>&#10003;</td><td><button type="button" class="btn btn-default btn-sm"  (click)="addToCart1('COG-B-277','COG-B-277')">
+                <span class="glyphicon glyphicon-shopping-cart" ></span> 
+              </button></td></tr>
+          <tr><td><a href="../PDF_Files/Brain/SJ-GBM2.pdf">SJ-GBM2</a></td><td>PD</td><td>brain tumor</td><td>5</td><td>Glioblastoma Multiforme</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td><button type="button" class="btn btn-default btn-sm"  (click)="addToCart1('SJ-GBM2','SJ-GBM2')">
+                <span class="glyphicon glyphicon-shopping-cart" ></span> 
+              </button></td></tr>
+          <tr><td><a href="../PDF_Files/Brain/CHLA-200.pdf">CHLA-200</a></td><td>PD-PM</td><td>parietal lobe</td><td>12</td><td>Glioblastoma Multiforme</td><td>-</td><td>-</td><td>&#10003;</td><td><button type="button" class="btn btn-default btn-sm"  (click)="addToCart1('CHLA-200','CHLA-200')">
+                <span class="glyphicon glyphicon-shopping-cart" ></span> 
+              </button></td></tr>
+          <tr><td>CHLA-260</td><td>PD</td><td>tumor</td><td>&nbsp;</td><td>Glioblastoma Multiforme</td><td>-</td><td>-</td><td>&#10003;</td><td><button type="button" class="btn btn-default btn-sm"  (click)="addToCart1('CHLA-260','CHLA-260')">
+                <span class="glyphicon glyphicon-shopping-cart" ></span> 
+              </button></td></tr>
+         
      </tbody>
     </table>
     <br>
