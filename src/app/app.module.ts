@@ -28,6 +28,15 @@ import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFireModule } from '@angular/fire';
 import {AngularFireDatabase} from 'angularfire2/database';
 import { CartComponent } from './cart/cart.component';
+import { MasterWebComponent } from './master-web/master-web.component';
+import { EwingsComponent } from './ewings/ewings.component';
+import { LymphoidComponent } from './lymphoid/lymphoid.component';
+import { RhabdomyosarcomaComponent } from './rhabdomyosarcoma/rhabdomyosarcoma.component';
+import { BrainncciComponent } from './brainncci/brainncci.component';
+import { EwingsnciiComponent } from './ewingsncii/ewingsncii.component';
+import { NeuroblastomanciiComponent } from './neuroblastomancii/neuroblastomancii.component';
+import { LeukemianciiComponent } from './leukemiancii/leukemiancii.component';
+import { Rhabdomyosarcom2Component } from './rhabdomyosarcom2/rhabdomyosarcom2.component';
 
 
 
@@ -57,6 +66,15 @@ import { CartComponent } from './cart/cart.component';
     ClidComponent,
     BrainTableComponent,
     CartComponent,
+    MasterWebComponent,
+    EwingsComponent,
+    LymphoidComponent,
+    RhabdomyosarcomaComponent,
+    BrainncciComponent,
+    EwingsnciiComponent,
+    NeuroblastomanciiComponent,
+    LeukemianciiComponent,
+    Rhabdomyosarcom2Component,
     
     
     
@@ -85,6 +103,16 @@ import { CartComponent } from './cart/cart.component';
         {path:'clid', component:ClidComponent},
         {path:'brain', component:BrainTableComponent},
         {path:'cart', component:CartComponent},
+        {path:'master-web', component:MasterWebComponent},
+        {path:'ewings', component:EwingsComponent},
+        {path:'lymphoid', component:LymphoidComponent},
+        {path:'rhb', component:RhabdomyosarcomaComponent},
+        {path:'brainncii', component:BrainncciComponent},
+        {path:'ewingsncii', component:EwingsnciiComponent},
+        {path:'neuroblastomancii', component:NeuroblastomanciiComponent},
+        {path:'leukemiancii', component:LeukemianciiComponent},
+        {path:'rhb2', component:Rhabdomyosarcom2Component},
+
 
     
     
