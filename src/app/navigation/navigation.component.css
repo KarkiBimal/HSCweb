@@ -36,16 +36,3 @@
   font-weight: 500;
   font-size: larger;
 }
-.footer{
-  background-color:#F8F9FA ;
-  padding:5px;
-
-}
-.footer a{
-  text-decoration:none;
-  background-color:#F8F9FA ;
-  padding:0.5px;
-}
-.dropdown{
-z-index: 1000;
-}
