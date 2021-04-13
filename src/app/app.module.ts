@@ -1,3 +1,4 @@
+import { ALKComponent } from './alk/alk.component';
 import { FireserviceService } from './fireservice.service';
 import { environment } from '../environments/environment';
 import { NgModule, Component } from '@angular/core';
@@ -43,6 +44,10 @@ import { MasterComponent } from './master/master.component';
 import { NeuropageComponent } from './neuropage/neuropage.component';
 import { DxComponent } from './dx/dx.component';
 import { PdPdPmComponent } from './pd-pd-pm/pd-pd-pm.component';
+import { MYCNComponent } from './mycn/mycn.component';
+import { MYCNamplifiedComponent } from './mycnamplified/mycnamplified.component';
+import { ALTESTComponent } from './alt-est/alt-est.component';
+import { TERTComponent } from './tert/tert.component';
 
 
 
@@ -87,6 +92,10 @@ import { PdPdPmComponent } from './pd-pd-pm/pd-pd-pm.component';
     NeuropageComponent,
     DxComponent,
     PdPdPmComponent,
+    MYCNComponent,
+    MYCNamplifiedComponent,
+    ALTESTComponent,
+    TERTComponent,
    
    
     
@@ -132,6 +141,16 @@ import { PdPdPmComponent } from './pd-pd-pm/pd-pd-pm.component';
         {path:'master', component:MasterComponent},
         {path:'dx', component:DxComponent},
         {path:'pdpdpm', component:PdPdPmComponent},
+        {path:'alk', component:ALKComponent},
+        {path:'mycn', component:MYCNComponent},
+        {path:'mycnamp', component:MYCNamplifiedComponent},
+        {path:'altest', component:ALTESTComponent},
+        {path:'tert', component:TERTComponent},
+
+
+
+
+
 
 
        
