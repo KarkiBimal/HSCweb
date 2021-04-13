@@ -37,6 +37,12 @@ import { EwingsnciiComponent } from './ewingsncii/ewingsncii.component';
 import { NeuroblastomanciiComponent } from './neuroblastomancii/neuroblastomancii.component';
 import { LeukemianciiComponent } from './leukemiancii/leukemiancii.component';
 import { Rhabdomyosarcom2Component } from './rhabdomyosarcom2/rhabdomyosarcom2.component';
+import { NeuropdxComponent } from './neuropdx/neuropdx.component';
+import { OthercancerComponent } from './othercancer/othercancer.component';
+import { MasterComponent } from './master/master.component';
+import { NeuropageComponent } from './neuropage/neuropage.component';
+import { DxComponent } from './dx/dx.component';
+import { PdPdPmComponent } from './pd-pd-pm/pd-pd-pm.component';
 
 
 
@@ -75,6 +81,14 @@ import { Rhabdomyosarcom2Component } from './rhabdomyosarcom2/rhabdomyosarcom2.c
     NeuroblastomanciiComponent,
     LeukemianciiComponent,
     Rhabdomyosarcom2Component,
+    NeuropdxComponent,
+    OthercancerComponent,
+    MasterComponent,
+    NeuropageComponent,
+    DxComponent,
+    PdPdPmComponent,
+   
+   
     
     
     
@@ -112,6 +126,15 @@ import { Rhabdomyosarcom2Component } from './rhabdomyosarcom2/rhabdomyosarcom2.c
         {path:'neuroblastomancii', component:NeuroblastomanciiComponent},
         {path:'leukemiancii', component:LeukemianciiComponent},
         {path:'rhb2', component:Rhabdomyosarcom2Component},
+        {path:'neuropdx', component:NeuropdxComponent},
+        {path:'othercancer', component:OthercancerComponent},
+        {path:'neuropage', component:NeuropageComponent},
+        {path:'master', component:MasterComponent},
+        {path:'dx', component:DxComponent},
+        {path:'pdpdpm', component:PdPdPmComponent},
+
+
+       
 
 
     
