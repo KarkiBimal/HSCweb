@@ -48,6 +48,8 @@ import { MYCNComponent } from './mycn/mycn.component';
 import { MYCNamplifiedComponent } from './mycnamplified/mycnamplified.component';
 import { ALTESTComponent } from './alt-est/alt-est.component';
 import { TERTComponent } from './tert/tert.component';
+import { DataarchiveComponent } from './dataarchive/dataarchive.component';
+import { ExternallinksComponent } from './externallinks/externallinks.component';
 
 
 
@@ -96,6 +98,8 @@ import { TERTComponent } from './tert/tert.component';
     MYCNamplifiedComponent,
     ALTESTComponent,
     TERTComponent,
+    DataarchiveComponent,
+    ExternallinksComponent,
    
    
     
@@ -146,6 +150,9 @@ import { TERTComponent } from './tert/tert.component';
         {path:'mycnamp', component:MYCNamplifiedComponent},
         {path:'altest', component:ALTESTComponent},
         {path:'tert', component:TERTComponent},
+        {path:'news', component:NewsComponent},
+        {path:'elinks', component:ExternallinksComponent},
+
 
 
 
