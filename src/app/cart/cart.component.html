@@ -1,1 +1,21 @@
 
+<head>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ </head>
+ <div class="section">
+   <h1 class="t_h1">
+       Cart
+   </h1>
+   <br> 
+   
+   <table class="table">
+   
+   <tbody>
+<tr *ngFor="let item of items | async" ><td id="{{ item}}"> {{ item}}</td><td><button type="button" class="btn btn-default btn-sm"  (click)="deleteCall(item)">
+   <i class="bi bi-trash"></i> 
+             </button></td></tr>
+
+</tbody></table>
+
+
+

@@ -1,3 +1,4 @@
+import { Observable } from 'rxjs';
 import { async } from '@angular/core/testing';
 import { Injectable } from '@angular/core';
 import { AngularFireDatabase } from 'angularfire2/database';
@@ -20,7 +21,7 @@ export class FireserviceService {
   private getCart(cartId:string){
      return this.db.object('/shopping-carts/'+ cartId);
   }
-  private node_v(val:any){
+  public node_v(val:any){
         return val;
   }
 
@@ -39,10 +40,25 @@ export class FireserviceService {
     
   async addToCart(x:string, y:string){
       let cartId=await this.getOrCreateCart();
-      var firebaseRef=firebase.database().ref("/shopping-carts/"+cartId).child(x).set(y);
+      var firebaseRef=firebase.database().ref("/shoppingcarts/"+cartId).child(x).set(y);
+      return cartId;
    
       
   }
+
+   getProducts():Observable<any[]>{
+    let cartId2=localStorage.getItem('cartId');
+    console.log(cartId2);
+    return this.db.list('shoppingcarts/'+cartId2).valueChanges();
+  }
+
+  delete(a:string){
+    let cartId3=localStorage.getItem('cartId');
+    const itemsRef = this.db.list('shoppingcarts/'+cartId3);
+    itemsRef.remove(a);
+  }
+
+  }
   
 
-}
+

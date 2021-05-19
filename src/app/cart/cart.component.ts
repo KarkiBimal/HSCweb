@@ -1,3 +1,6 @@
+import { FireserviceService } from './../fireservice.service';
+import { Observable } from 'rxjs';
+import { ProductserviceService } from './../productservice.service';
 import { AngularFireDatabase } from 'angularfire2/database';
 import { Component, OnInit } from '@angular/core';
 
@@ -7,17 +10,23 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './cart.component.html',
   styleUrls: ['./cart.component.css']
 })
-export class CartComponent implements OnInit {
-
-  constructor(db:AngularFireDatabase) {
-    
-    let shoppingcart=
-    db.list('/shopping-carts').valueChanges()
-    console.log(shoppingcart)
+export class CartComponent implements OnInit{
    
-   }
-
-  ngOnInit(): void {
+  items!: Observable<any[]>;
+  
+  constructor(private ps: FireserviceService) {}
+    
+  ngOnInit(){
+    this.items=this.ps.getProducts();
+    
   }
 
-}
+  deleteCall(a:string){
+    this.ps.delete(a);
+    console.log(a);
+  }
+  
+    
+  }
+
+
