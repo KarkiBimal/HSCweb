@@ -50,6 +50,7 @@ import { ALTESTComponent } from './alt-est/alt-est.component';
 import { TERTComponent } from './tert/tert.component';
 import { DataarchiveComponent } from './dataarchive/dataarchive.component';
 import { ExternallinksComponent } from './externallinks/externallinks.component';
+import { HelpComponent } from './help/help.component';
 
 
 
@@ -100,6 +101,7 @@ import { ExternallinksComponent } from './externallinks/externallinks.component'
     TERTComponent,
     DataarchiveComponent,
     ExternallinksComponent,
+    HelpComponent,
    
    
     
@@ -152,6 +154,8 @@ import { ExternallinksComponent } from './externallinks/externallinks.component'
         {path:'tert', component:TERTComponent},
         {path:'news', component:NewsComponent},
         {path:'elinks', component:ExternallinksComponent},
+        {path:'help', component:HelpComponent},
+
 
 
 
