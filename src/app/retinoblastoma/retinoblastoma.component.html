@@ -1,0 +1,180 @@
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+  <div class="section">
+    <h1 class="t_h1">
+      Retinoblastoma
+    </h1>
+    
+    <table class="table">
+    <thead class="thead-dark">
+        <tr>
+    
+    <th scope="col">Cell Line</th>
+    <th>PDX</th>
+    <th>Phase of Disease</th>
+    <th scope="col">Sample Type</th>
+    <th colspan="3">pO2</th>
+    <th scope="col"> Request </th>
+    
+    </thead>
+    <tbody>
+
+        <tr><td  colspan="4">&nbsp;</td><td>2% O2</td><td>5% O2</td><td>20%O2</td><td></tr>
+ <tr><td>CHLA-107</td><td>-</td><td>Dx</td><td>bone marrow</td><td>-</td><td>-</td><td>&#10003;</td><td><button type="button" class="btn btn-default btn-sm"  
+    (click)="addToCart1('CHLA-107','CHLA-107')"><span class="glyphicon glyphicon-shopping-cart" ></span> 
+  </button></td></tr>
+ <tr><td>CHLA-167</td><td>-</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td><td>-</td><td>&#10003;</td><td><button type="button" class="btn btn-default btn-sm"  
+    (click)="addToCart1('CHLA-167','CHLA-167')">
+    <span class="glyphicon glyphicon-shopping-cart" ></span> 
+  </button></td></tr>
+ <tr><td>CHLA-173</td><td>-</td><td>&nbsp;</td><td>tumor</td><td>-</td><td>-</td><td>&#10003;</td><td><button type="button" class="btn btn-default btn-sm"  
+    (click)="addToCart1('CHLA-173','CHLA-173')">
+    <span class="glyphicon glyphicon-shopping-cart" ></span> 
+  </button></td></tr>
+ <tr><td>CHLA-176</td><td>-</td><td>Dx</td><td>tumor</td><td>-</td><td>-</td><td>&#10003;</td><td><button type="button" class="btn btn-default btn-sm"  
+    (click)="addToCart1('CHLA-176','CHLA-176')">
+    <span class="glyphicon glyphicon-shopping-cart" ></span> 
+  </button></td></tr>
+ <tr><td>CHLA-192</td><td>-</td><td>Dx</td><td>tumor</td><td>-</td><td>-</td><td>&#10003;</td><td><button type="button" class="btn btn-default btn-sm"  
+    (click)="addToCart1('CHLA-192','CHLA-192')">
+    <span class="glyphicon glyphicon-shopping-cart" ></span> 
+  </button></td></tr>
+ <tr><td>CHLA-193</td><td>-</td><td>Dx</td><td>tumor</td><td>-</td><td>-</td><td>&#10003;</td><td><button type="button" class="btn btn-default btn-sm"  
+    (click)="addToCart1('CHLA-193','CHLA-193')">
+    <span class="glyphicon glyphicon-shopping-cart" ></span> 
+  </button></td></tr>
+ <tr><td>CHLA-194</td><td>-</td><td>PD</td><td>tumor</td><td>-</td><td>-</td><td>&#10003;</td><td><button type="button" class="btn btn-default btn-sm"  
+    (click)="addToCart1('CHLA-194','CHLA-194')">
+    <span class="glyphicon glyphicon-shopping-cart" ></span> 
+  </button></td></tr>
+ <tr><td>CHLA-195</td><td>-</td><td>Dx</td><td>tumor, (from right eye)</td><td>-</td><td>-</td><td>&#10003;</td><td><button type="button" class="btn btn-default btn-sm" 
+     (click)="addToCart1('CHLA-195','CHLA-195')">
+    <span class="glyphicon glyphicon-shopping-cart" ></span> 
+  </button></td></tr>
+ <tr><td>CHLA-196</td><td>-</td><td>PD</td><td>tumor, (from left eye)</td><td>-</td><td>-</td><td>&#10003;</td><td><button type="button" class="btn btn-default btn-sm"  
+    (click)="addToCart1('CHLA-196','CHLA-196')">
+    <span class="glyphicon glyphicon-shopping-cart" ></span> 
+  </button></td></tr>
+ <tr><td>CHLA-203</td><td>-</td><td>PD</td><td>tumor</td><td>-</td><td>-</td><td>&#10003;</td><td><button type="button" class="btn btn-default btn-sm"  
+    (click)="addToCart1('CHLA-203','CHLA-203')">
+    <span class="glyphicon glyphicon-shopping-cart" ></span> 
+  </button></td></tr>
+ <tr><td>CHLA-204</td><td>-</td><td>&nbsp;</td><td>tumor, (from left eye)</td><td>-</td><td>-</td><td>&#10003;</td><td><button type="button" class="btn btn-default btn-sm"  
+    (click)="addToCart1('CHLA-204','CHLA-204')">
+    <span class="glyphicon glyphicon-shopping-cart" ></span> 
+  </button></td></tr>
+ <tr><td>CHLA-210</td><td>-</td><td>P-EBR</td><td>(from left eye)</td><td>-</td><td>-</td><td>&#10003;</td><td><button type="button" class="btn btn-default btn-sm"  
+    (click)="addToCart1('CHLA-210','CHLA-210')">
+    <span class="glyphicon glyphicon-shopping-cart" ></span> 
+  </button></td></tr>
+ <tr><td>CHLA-215</td><td>-</td><td>&nbsp;</td><td>(from right eye)</td><td>-</td><td>-</td><td>&#10003;</td><td><button type="button" class="btn btn-default btn-sm"  
+    (click)="addToCart1('CHLA-215','CHLA-215')">
+    <span class="glyphicon glyphicon-shopping-cart" ></span> 
+  </button></td></tr>
+ <tr><td>CHLA-217</td><td>-</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td><td>-</td><td>&#10003;</td><td><button type="button" class="btn btn-default btn-sm"  
+    (click)="addToCart1('CHLA-217','CHLA-217')">
+    <span class="glyphicon glyphicon-shopping-cart" ></span> 
+  </button></td></tr>
+ <tr><td>CHLA-222</td><td>-</td><td>Dx</td><td>(from right eye)</td><td>-</td><td>-</td><td>&#10003;</td><td><button type="button" class="btn btn-default btn-sm"  
+    (click)="addToCart1('CHLA-222','CHLA-222')">
+    <span class="glyphicon glyphicon-shopping-cart" ></span> 
+  </button></td></tr>
+ <tr><td>CHLA-223</td><td>-</td><td>Dx</td><td>&nbsp;</td><td>-</td><td>-</td><td>&#10003;</td><td><button type="button" class="btn btn-default btn-sm" 
+     (click)="addToCart1('CHLA-223','CHLA-223')">
+    <span class="glyphicon glyphicon-shopping-cart" ></span> 
+  </button></td></tr>
+ <tr><td>CHLA-224</td><td>-</td><td>Dx</td><td>(from right eye)</td><td>-</td><td>-</td><td>&#10003;</td><td><button type="button" class="btn btn-default btn-sm"  
+    (click)="addToCart1('CHLA-224','CHLA-224')">
+    <span class="glyphicon glyphicon-shopping-cart" ></span> 
+  </button></td></tr>
+ <tr><td>CHLA-227</td><td>-</td><td>Dx</td><td>&nbsp;</td><td>-</td><td>-</td><td>&#10003;</td><td><button type="button" class="btn btn-default btn-sm"  
+    (click)="addToCart1('CHLA-227','CHLA-227')">
+    <span class="glyphicon glyphicon-shopping-cart" ></span> 
+  </button></td></tr>
+ <tr><td>CHLA-229</td><td>-</td><td>Dx</td><td>&nbsp;</td><td>-</td><td>-</td><td>&#10003;</td><td><button type="button" class="btn btn-default btn-sm"  
+    (click)="addToCart1('CHLA-229','CHLA-229')">
+    <span class="glyphicon glyphicon-shopping-cart" ></span> 
+  </button></td></tr>
+ <tr><td>CHLA-230</td><td>-</td><td>Dx</td><td>&nbsp;</td><td>-</td><td>-</td><td>&#10003;</td><td><button type="button" class="btn btn-default btn-sm"  
+    (click)="addToCart1('CHLA-230','CHLA-230')">
+    <span class="glyphicon glyphicon-shopping-cart" ></span> 
+  </button></td></tr>
+ <tr><td>CHLA-246</td><td>-</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td><td>-</td><td>&#10003;</td><td><button type="button" class="btn btn-default btn-sm" 
+     (click)="addToCart1('CHLA-246','CHLA-246')">
+    <span class="glyphicon glyphicon-shopping-cart" ></span> 
+  </button></td></tr>
+ <tr><td>COG-RB-273</td><td>-</td><td>Dx</td><td>&nbsp;</td><td>-</td><td>-</td><td>&#10003;</td><td><button type="button" class="btn btn-default btn-sm" 
+     (click)="addToCart1('COG-RB-273','COG-RB-273')">
+    <span class="glyphicon glyphicon-shopping-cart" ></span> 
+  </button></td></tr>
+ <tr><td>COG-RB-279</td><td>-</td><td>Dx</td><td>(from left eye)</td><td>-</td><td>-</td><td>&#10003;</td><td><button type="button" class="btn btn-default btn-sm" 
+     (click)="addToCart1('COG-RB-279','COG-RB-279')">
+    <span class="glyphicon glyphicon-shopping-cart" ></span> 
+  </button></td></tr>
+ <tr><td>COG-RB-286</td><td>-</td><td>&nbsp;</td><td>unilateral (left)</td><td>-</td><td>-</td><td>&#10003;</td><td><button type="button" class="btn btn-default btn-sm" 
+     (click)="addToCart1('COG-RB-286','COG-RB-286')">
+    <span class="glyphicon glyphicon-shopping-cart" ></span> 
+  </button></td></tr>
+ <tr><td>COG-RB-292</td><td>-</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td><td>-</td><td>&#10003;</td><td><button type="button" class="btn btn-default btn-sm" 
+     (click)="addToCart1('COG-RB-292','COG-RB-292')">
+    <span class="glyphicon glyphicon-shopping-cart" ></span> 
+  </button></td></tr>
+ <tr><td>COG-RB-306</td><td>-</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td><td>-</td><td>&#10003;</td><td><button type="button" class="btn btn-default btn-sm" 
+     (click)="addToCart1('COG-RB-306','COG-RB-306')">
+    <span class="glyphicon glyphicon-shopping-cart" ></span> 
+  </button></td></tr>
+ <tr><td>COG-RB-307</td><td>-</td><td>&nbsp;</td><td>(from left eye)</td><td>-</td><td>-</td><td>&#10003;</td><td><button type="button" class="btn btn-default btn-sm" 
+     (click)="addToCart1('COG-RB-307','COG-RB-307')">
+    <span class="glyphicon glyphicon-shopping-cart" ></span> 
+  </button></td></tr>
+ <tr><td>COG-RB-308</td><td>-</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td><td>-</td><td>&#10003;</td><td><button type="button" class="btn btn-default btn-sm" 
+     (click)="addToCart1('COG-RB-308','COG-RB-308')">
+    <span class="glyphicon glyphicon-shopping-cart" ></span> 
+  </button></td></tr>
+ <tr><td>COG-RB-315</td><td>-</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td><td>-</td><td>&#10003;</td><td><button type="button" class="btn btn-default btn-sm" 
+     (click)="addToCart1('COG-RB-315','COG-RB-315')">
+    <span class="glyphicon glyphicon-shopping-cart" ></span> 
+  </button></td></tr>
+ <tr><td>COG-RB-340</td><td>-</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td><td>&#10003;</td><td>&#10003;</td><td><button type="button" class="btn btn-default btn-sm" 
+     (click)="addToCart1('COG-RB-340','COG-RB-340')">
+    <span class="glyphicon glyphicon-shopping-cart" ></span> 
+  </button></td></tr>
+ <tr><td>COG-RB-341h</td><td>-</td><td>&nbsp;</td><td>(from left eye)</td><td>-</td><td>&#10003;</td><td>-</td><td><button type="button" class="btn btn-default btn-sm" 
+     (click)="addToCart1('COG-RB-341h','COG-RB-341h')">
+    <span class="glyphicon glyphicon-shopping-cart" ></span> 
+  </button></td></tr>
+ <tr><td>COG-RB-344h</td><td>-</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td><td>&#10003;</td><td>-</td><td><button type="button" class="btn btn-default btn-sm" 
+     (click)="addToCart1('COG-RB-344h','COG-RB-344h')">
+    <span class="glyphicon glyphicon-shopping-cart" ></span> 
+  </button></td></tr>
+ <tr><td>COG-RB-360</td><td>-</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td><td>&#10003;</td><td>&#10003;</td><td><button type="button" class="btn btn-default btn-sm" 
+     (click)="addToCart1('COG-RB-360','COG-RB-360')">
+    <span class="glyphicon glyphicon-shopping-cart" ></span> 
+  </button></td></tr>
+ <tr><td>COG-RB-361</td><td>-</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td><td>&#10003;</td><td>&#10003;</td><td><button type="button" class="btn btn-default btn-sm" 
+     (click)="addToCart1('COG-RB-361','COG-RB-361')">
+    <span class="glyphicon glyphicon-shopping-cart" ></span> 
+  </button></td></tr>
+ <tr><td>COG-RB-371h</td><td>-</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td><td>&#10003;</td><td>-</td><td><button type="button" class="btn btn-default btn-sm" 
+     (click)="addToCart1('COG-RB-371h','COG-RB-371h')">
+    <span class="glyphicon glyphicon-shopping-cart" ></span> 
+  </button></td></tr>
+ <tr><td>COG-RB-388h</td><td>-</td><td>&nbsp;</td><td>(right eye)</td><td>-</td><td>&#10003;</td><td>-</td><td><button type="button" class="btn btn-default btn-sm" 
+     (click)="addToCart1('COG-RB-388h','COG-RB-388h')">
+    <span class="glyphicon glyphicon-shopping-cart" ></span> 
+  </button></td></tr>
+ <tr><td>COG-RB-392h</td><td>-</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td><td>&#10003;</td><td>-</td><td><button type="button" class="btn btn-default btn-sm" 
+     (click)="addToCart1('COG-RB-392h','COG-RB-392h')">
+    <span class="glyphicon glyphicon-shopping-cart" ></span> 
+  </button></td></tr>
+ <tr><td>COG-RB-398h</td><td>-</td><td>&nbsp;</td><td>&nbsp;</td><td>-</td><td>&#10003;</td><td>-</td><td><button type="button" class="btn btn-default btn-sm" 
+     (click)="addToCart1('COG-RB-398h','COG-RB-398h')">
+    <span class="glyphicon glyphicon-shopping-cart" ></span> 
+  </button></td></tr>
+ <tr><td>COG-RB-673h</td><td>COG-RB-673x</td><td>PD-PM</td><td>post mortem blood</td><td>-</td><td>&#10003;</td><td>-</td><td><button type="button" class="btn btn-default btn-sm" 
+     (click)="addToCart1('COG-RB-673h','COG-RB-673h')">
+    <span class="glyphicon glyphicon-shopping-cart" ></span> 
+  </button></td></tr>
+</tbody></table>
+     

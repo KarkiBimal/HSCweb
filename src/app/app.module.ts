@@ -51,6 +51,11 @@ import { TERTComponent } from './tert/tert.component';
 import { DataarchiveComponent } from './dataarchive/dataarchive.component';
 import { ExternallinksComponent } from './externallinks/externallinks.component';
 import { HelpComponent } from './help/help.component';
+import { EpendymomaComponent } from './ependymoma/ependymoma.component';
+import { HepatoblastomaComponent } from './hepatoblastoma/hepatoblastoma.component';
+import { RetinoblastomaComponent } from './retinoblastoma/retinoblastoma.component';
+import { WilmsComponent } from './wilms/wilms.component';
+import { GermcellComponent } from './germcell/germcell.component';
 
 
 
@@ -102,6 +107,13 @@ import { HelpComponent } from './help/help.component';
     DataarchiveComponent,
     ExternallinksComponent,
     HelpComponent,
+    EpendymomaComponent,
+    HepatoblastomaComponent,
+    RetinoblastomaComponent,
+    WilmsComponent,
+    GermcellComponent,
+    
+    
    
    
     
@@ -155,6 +167,14 @@ import { HelpComponent } from './help/help.component';
         {path:'news', component:NewsComponent},
         {path:'elinks', component:ExternallinksComponent},
         {path:'help', component:HelpComponent},
+        {path:'epen', component:EpendymomaComponent},
+        {path:'hepatoblastoma', component:HepatoblastomaComponent},
+        {path:'retinoblastoma', component:RetinoblastomaComponent},
+        {path:'wilms', component:WilmsComponent},
+        {path:'germ', component:GermcellComponent},
+
+
+
 
 
 
