@@ -56,6 +56,9 @@ import { HepatoblastomaComponent } from './hepatoblastoma/hepatoblastoma.compone
 import { RetinoblastomaComponent } from './retinoblastoma/retinoblastoma.component';
 import { WilmsComponent } from './wilms/wilms.component';
 import { GermcellComponent } from './germcell/germcell.component';
+import { ContactComponent } from './contact/contact.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -112,6 +115,7 @@ import { GermcellComponent } from './germcell/germcell.component';
     RetinoblastomaComponent,
     WilmsComponent,
     GermcellComponent,
+    ContactComponent,
     
     
    
@@ -122,7 +126,10 @@ import { GermcellComponent } from './germcell/germcell.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule,
+    HttpClientModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     RouterModule.forRoot([
@@ -172,6 +179,8 @@ import { GermcellComponent } from './germcell/germcell.component';
         {path:'retinoblastoma', component:RetinoblastomaComponent},
         {path:'wilms', component:WilmsComponent},
         {path:'germ', component:GermcellComponent},
+        {path:'contact', component:ContactComponent},
+
 
 
 

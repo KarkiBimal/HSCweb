@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+      <div class="col-6 mx-auto mt-5 p-3 bg-light border border-info" enctype="multipart/form-data">
+        <form [formGroup]="infoForm" (ngSubmit)="sendMail()" #form="ngForm">
+          <label for="nameInp">Name</label>
+          <input type="text" id="nameInp" class="form-control border-info" formControlName="name">
+          <label for="mailInp">Email</label>
+          <input type="text" id="mailInp" class="form-control border-info" formControlName="email">
+          <label for="messageInp">Message</label>
+          <input type="text" id="messageInp" class="form-control border-info" formControlName="message">
+          <label for="attachment">File</label>
+          <input type="file" id="fileInp" class="form-control border-info" formControlName="contact_upload">
+
+  
+         
+  
+          <div class="text-right mt-3">
+            <button class="btn btn-info" [disabled]="form.invalid">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>

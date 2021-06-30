@@ -58,10 +58,7 @@ app.post('/sendFormData',  upload.single('profile'),(req, res) => {
               </tbody>
             </table>
           `,
-    attachments:[{
-      filename: req.body.filename,
-      path: req.file.path
-    }]
+    
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
